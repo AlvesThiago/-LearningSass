@@ -1,0 +1,30 @@
+@use 'config/reset.scss';
+@use 'config/var.scss';
+@use 'header/head.scss';
+@use 'section/section.scss';
+
+@media (max-width: var.$tablet){
+    .container{
+        max-width: 80%;
+    }
+
+    section{
+        .products {
+            grid-template-columns: repeat(2, 48.5%);
+            column-gap: 3%;
+        }
+    }
+}
+
+@media (max-width: var.$mobile) {
+    section{
+        .products {
+            display: block;
+        }
+    
+        .product-item  {
+            margin-bottom: 32px;
+        }
+    }
+    
+}   
